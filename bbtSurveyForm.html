@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTP-8">
+    <title>KevinTea Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Dancing+Script&family=Bebas+Neue&family=Open+Sans" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <h2>Coming Soon</h2>
+    <h1 id="title">KevinTea</h1>
+    <p id="description">Let us know which tea you'd like to see!</p>
+</header>
+<div>
+    <form id="survey-form" class="round-border" action="#">
+        <label id="name-label" for="name">Name
+            <input id="name" class="round-border" type="text" placeholder="Enter your full name" required>
+        </label>
+        <label id="email-label" for="email">E-mail
+            <input id="email" class="round-border" type="email" placeholder="Enter your e-mail address" required>
+        </label>
+        <label id="number-label" for="number">Age
+            <input id="number" class="round-border" type="number" min="1" max="130" placeholder="Optional">
+        </label>
+        <p>Which new drink would you most like to see on our menu?</p>
+            <label for="thai-milk-tea">
+                <input id="thai-milk-tea" type="radio" name="new-drink" value="thai milk tea">Thai Milk Tea
+            </label>
+            <label for="durian-slush">
+                <input id="durian-slush" type="radio" name="new-drink" value="durian slush">Durian Slush
+            </label>
+            <label for="peach-yakult">
+                <input id="peach-yakult" type="radio" name="new-drink" value="peach yakult">Peach yakult
+            </label>
+        <p>Which topping(s) do you usually pick?</p>
+            <label for="tapioca">
+                <input id="tapioca" type="checkbox" name="topping" value="tapioca">Tapioca
+            </label>
+            <label for="coconut-jelly">
+                <input id="coconut-jelly" type="checkbox" name="topping" value="coconut jelly">Coconut Jelly
+            </label>
+            <label for="grass-jelly">
+                <input id="grass-jelly" type="checkbox" name="topping" value="grass jelly">Grass Jelly
+            </label>
+            <label for="pudding">
+                <input id="pudding" type="checkbox" name="topping" value="pudding">Pudding
+            </label>
+            <label for="none">
+                <input id="none" type="checkbox" name="topping" value="none">None
+            </label>
+        <p>How much would you pay for a regular sized (500 mL) drink?</p>
+        <select id="dropdown" name="price">
+            <option value="0.01-1.99" 1disabled> $ 0.01 - 1.99</option>
+            <option value="2-3.99">$ 2.00 - 3.99</option>
+            <option value="4-5.99">$ 4.00 - 5.99</option>
+            <option value="6-8">$ 6.00 - 8.00</option>
+        </select>
+        <!--    <ul>
+                <li>$2-4</li>
+                <li>$4-6</li>
+                <li>$6-8</li>
+            </ul> -->
+        <p>Which describes you best?</p>
+        <div class="dropdown">
+            <button class="dropbtn">Employement Status</button>
+            <div class="dropdown-content">
+                <a href="#">Student</a>
+                <a href="#">Working</a>
+                <a href="#">Unemployed</a>
+            </div>
+        </div>
+        <p>Comments and suggestions?</p>
+        <textarea cols="65" rows="8" placeholder="We're happy to receive your feedback!"></textarea><br><br>
+        <button id="submit" type="submit">SUBMIT</button>    
+    </form>
+    <footer>
+        <p><strong>Follow us on Twitter and Facebook</strong></p>
+        <a href="#" target="_blank"><img id="twitter-logo" class="smaller-img social-media-logo" src="twitter-logo.png" alt="Twitter Logo" style="margin-right: 40px;"></a>
+        <a href="#" target="_blank"><img id="fb-logo" class="smaller-img social-media-logo" src="facebook-logo.png" alt="Facebook Logo"></a>
+    </footer>
+</div>
+</body>
+</html>
